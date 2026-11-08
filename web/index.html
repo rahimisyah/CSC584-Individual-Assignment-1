@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSC584 - Personal Profile Form</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <i class="fa-solid fa-id-card brand-icon"></i>
+            <h2>Student Profile Entry Form</h2>
+            <p>CSC584 Enterprise Application Development - Assignment 1</p>
+        </header>
+
+        <form action="ProfileServlet" method="post" class="profile-form">
+            <div class="form-group">
+                <label for="fullName"><i class="fa-solid fa-user"></i> Full Name</label>
+                <input type="text" id="fullName" name="fullName" placeholder="e.g. MUHAMMAD RAHIMI BIN SYAHMAN" required>
+            </div>
+
+            <div class="form-group">
+                <label for="studentId"><i class="fa-solid fa-hashtag"></i> Student ID</label>
+                <input type="text" id="studentId" name="studentId" placeholder="e.g. 2026124189" required>
+            </div>
+
+            <div class="form-group">
+                <label for="programme"><i class="fa-solid fa-graduation-cap"></i> Programme Code</label>
+                <input type="text" id="programme" name="programme" placeholder="e.g. CS240" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email"><i class="fa-solid fa-envelope"></i> Email Address</label>
+                <input type="email" id="email" name="email" placeholder="e.g. 2026124189@student.uitm.edu.my" required>
+            </div>
+
+            <div class="form-group">
+                <label for="hobbies"><i class="fa-solid fa-icons"></i> Hobbies & Interests</label>
+                <input type="text" id="hobbies" name="hobbies" placeholder="e.g. Web Development, Gaming, Reading" required>
+            </div>
+
+            <div class="form-group">
+                <label for="introduction"><i class="fa-solid fa-pen-nib"></i> Short Self-Introduction</label>
+                <textarea id="introduction" name="introduction" rows="4" placeholder="Tell us a little bit about yourself..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn-submit">
+                Submit Profile <i class="fa-solid fa-paper-plane"></i>
+            </button>
+        </form>
+    </div>
+</body>
+</html>
