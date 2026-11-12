@@ -15,7 +15,7 @@ This web application is developed for **CSC584 Enterprise Application Developmen
 - **Frontend:** HTML5, CSS3, FontAwesome Icons
 - **Backend Controller:** Java Servlet (`javax.servlet-api 3.1.0`)
 - **Presentation View:** JavaServer Pages (`javax.servlet.jsp-api 2.3.1`)
-- **IDE & Server:** NetBeans IDE 8.2 / GlassFish Server 4.1.1 / Apache Tomcat
+- **IDE & Server:** NetBeans IDE 8.2 / GlassFish Server 4.1.1 
 
 ##  Execution Architecture
 `index.html` (Form submission via POST) ➔ `ProfileServlet.java` (Extracts parameters & sets request scope) ➔ `profile.jsp` (Renders dynamic output)
